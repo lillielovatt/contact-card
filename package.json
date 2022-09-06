@@ -2,7 +2,7 @@
   "name": "contact-card",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+ "private":true, //prevents accidental publishing of your code
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
@@ -25,5 +25,9 @@
   "homepage": "https://github.com/lillielovatt/contact-card#readme",
   "dependencies": {
     "concurrently": "^7.3.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   }
 }
